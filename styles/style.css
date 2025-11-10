@@ -1,3 +1,4 @@
+
 .page {
   background-image: var(--bg-image);
   background-size: cover;
@@ -8,7 +9,6 @@
   font-family: var(--main-font);
   font-size: var(--main-font-size);
   color: var(--main-text-color);
-  padding: var(--main-padding);
 }
 
 .decorated-zone::before {
@@ -30,6 +30,7 @@
   block-size: 25px;
   inline-size: 25px;
   inset-block-end: var(--main-padding);
+  inset-inline-start: var(--main-padding);
 }
 
 .header__rec {
@@ -62,6 +63,7 @@
   height: 100vh;
   align-items: center;
   justify-items: end;
+  padding: var(--main-padding);
 }
 
 .header__theme-menu-list {
@@ -140,6 +142,7 @@
 }
 
 .main {
+  padding: 0 var(--main-padding);
   display: grid;
   grid-auto-flow: row;
   gap: var(--sections-gap);
@@ -237,10 +240,6 @@
     grid-row: span 2;
   }
 
-  .books {
-
-  }
-
   .street {
     grid-column: span 2;
   }
@@ -257,7 +256,7 @@
 
   .section_what-do-it-less-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  
-    align-items: start;  
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
   }
 }
