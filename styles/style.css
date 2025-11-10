@@ -33,6 +33,11 @@
   inset-inline-start: var(--main-padding);
 }
 
+.decorated-zone {
+  height: 100vh;
+  position: relative;
+}
+
 .header__rec {
   color: var(--button-color);
   text-transform: uppercase;
@@ -60,7 +65,6 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   margin-bottom: var(--content-padding);
-  height: 100vh;
   align-items: center;
   justify-items: end;
   padding: var(--main-padding);
@@ -69,7 +73,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 .header__theme-menu-button {
@@ -117,11 +121,14 @@
   line-height: (var(--main-line-height));
 }
 
-/*TODO*/
 .main__section-header {
   font-size: inherit;
   line-height: (var(--main-line-height));
   color: var(--main-color)
+}
+
+.card-link {
+  text-shadow: 2px 2px var(--link-shadow-color);
 }
 
 .main__section,
