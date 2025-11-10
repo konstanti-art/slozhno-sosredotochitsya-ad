@@ -256,6 +256,7 @@
   .header__theme-menu {
     justify-self: center;
     align-self: start;
+    gap: 30px;
   }
 
   .header__theme-menu-list {
@@ -268,7 +269,4 @@
     align-items: start;
   }
 
-  .header__theme-menu-list {
-  gap: 30px;
-  }
 }
