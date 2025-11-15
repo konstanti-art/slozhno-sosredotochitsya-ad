@@ -174,12 +174,14 @@
 
 .cards-images {
   display: grid;
+  gap: var(--main-padding);
 }
 
 .card-image-item {
+  display: block;
   object-fit: cover;
   width: 100%;
-  height: calc(100% - var(--main-padding));
+  height: 100%;
   object-position: center;
 }
 
@@ -228,7 +230,7 @@
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: var(--main-padding);
+    gap: var(--main-padding);
   }
 
   .sunset {
