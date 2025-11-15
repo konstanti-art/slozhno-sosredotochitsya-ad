@@ -167,20 +167,19 @@
 }
 
 .main__section-card_with-image {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: var(--main-padding)
 }
 
 .cards-images {
   display: grid;
-  grid-auto-flow: row;
-  gap: var(--main-padding);
 }
 
-.card-image {
-  inline-size: 100%;
-  block-size: 100%;
+.card-image-item {
   object-fit: cover;
+  width: 100%;
+  height: calc(100% - var(--main-padding));
   object-position: center;
 }
 
@@ -229,7 +228,7 @@
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--main-padding);
+    column-gap: var(--main-padding);
   }
 
   .sunset {
